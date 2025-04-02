@@ -20,7 +20,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install torch==2.4.1 torchvision {{args && args.xformers ? 'xformers' : ''}}  --index-url https://download.pytorch.org/whl/cu121"
+        "message": "uv pip install torch==2.4.1 torchvision {{args && args.xformers ? 'xformers' : ''}}  --index-url https://download.pytorch.org/whl/cu121"
       }
     },
     // windows amd
@@ -30,7 +30,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install torch-directml torchvision numpy==1.26.4"
+        "message": "uv pip install torch-directml torchvision numpy==1.26.4"
       }
     },
     // windows cpu
@@ -40,7 +40,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install torch==2.4.1 torchvision"
+        "message": "uv pip install torch==2.4.1 torchvision"
       }
     },
     // apple mac
@@ -50,7 +50,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install torch==2.4.1 torchvision"
+        "message": "uv pip install torch==2.4.1 torchvision"
       }
     },
     // intel mac
@@ -60,7 +60,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install torch==2.1.2 torchvision==0.16.2"
+        "message": "uv pip install torch==2.1.2 torchvision==0.16.2"
       }
     },
     // linux nvidia
@@ -70,7 +70,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install torch==2.4.1 torchvision {{args && args.xformers ? 'xformers' : ''}}  --index-url https://download.pytorch.org/whl/cu121"
+        "message": "uv pip install torch==2.4.1 torchvision {{args && args.xformers ? 'xformers' : ''}}  --index-url https://download.pytorch.org/whl/cu121"
       }
     },
     // linux rocm (amd)
@@ -80,7 +80,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install torch==2.4.1 torchvision --index-url https://download.pytorch.org/whl/rocm6.0"
+        "message": "uv pip install torch==2.4.1 torchvision --index-url https://download.pytorch.org/whl/rocm6.1"
       }
     },
     // linux cpu
@@ -90,7 +90,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install torch==2.4.1 torchvision --index-url https://download.pytorch.org/whl/cpu"
+        "message": "uv pip install torch==2.4.1 torchvision --index-url https://download.pytorch.org/whl/cpu"
       }
     }
   ]
