@@ -17,7 +17,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "uv pip install torch-directml torchvision numpy==1.26.4"
+        "message": "uv pip install torch-directml torchvision numpy==1.26.4 --force-reinstall"
       }
     },
     // windows cpu
@@ -27,7 +27,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "uv pip install torch==2.4.1 torchvision"
+        "message": "uv pip install torch==2.7.0 torchvision==0.22.0 --index-url https://download.pytorch.org/whl/cpu"
       }
     },
     // apple mac
@@ -37,7 +37,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "uv pip install torch==2.4.1 torchvision"
+        "message": "uv pip install torch==2.7.0 torchvision==0.22.0 --index-url https://download.pytorch.org/whl/cpu"
       }
     },
     // intel mac
@@ -47,7 +47,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "uv pip install torch==2.1.2 torchvision==0.16.2"
+        "message": "uv pip install torch==2.2.2 torchvision==0.17.2 --index-url https://download.pytorch.org/whl/cpu"
       }
     },
     // linux nvidia
@@ -67,7 +67,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "uv pip install torch==2.4.1 torchvision --index-url https://download.pytorch.org/whl/rocm6.1"
+        "message": "uv pip install torch==2.7.0 torchvision==0.22.0 --index-url https://download.pytorch.org/whl/rocm6.1"
       }
     },
     // linux cpu
@@ -77,7 +77,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "uv pip install torch==2.4.1 torchvision --index-url https://download.pytorch.org/whl/cpu"
+        "message": "uv pip install torch==2.7.0 torchvision==0.22.0 --index-url https://download.pytorch.org/whl/cpu"
       }
     }
   ]
